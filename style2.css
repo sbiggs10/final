@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html {
+	font-size: 16px;
+}
+
+.navbar {
+  display: flex;
+  justify-content:flex-start; /* Align links from both ends */
+  align-items: center; /* Vertically center content */
+  background-color: rgba(60,61,53,1.00);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+
+body {
+	background: url("../crafts/Sadie2/background6.avif") no-repeat fixed top left;
+	background-size: cover;
+}
+
+.row {
+	display: flex;
+	margin-top: 5%;
+	gap: 20px;
+}
+
+
+.comlumn {
+	background-color: rgba(187,185,181,.7);
+	padding: 1rem 0;
+	flex: 1;
+	border-radius: 5px;
+	
+}
+
+.comlumn2 {
+	padding: 1rem 0;
+	flex: 1;
+	border-radius: 5px;
+}
+
+.comlumn3 {
+	padding: 1rem 0;
+	flex: 3;
+	border-radius: 50px;
+	background-color: rgba(141,141,139,.7);
+	border: 4px solid rgba(0, 0, 0, 0.8);
+	
+}
+
+
+h1 {
+	text-align:center;
+	padding: 10px 10px 10px 10px;
+	font-size: 3em;
+}
+
+h2 {
+	text-align: center;
+	padding: 10px 10px 10px 10px;
+	font-size: 2em;
+}
+
+p {
+	padding: 10px 10px 10px 10px;
+	font-size: 1.5em;
+	text-align: center;
+	
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+
+img {
+	width: 100%;
+	border: 4px solid rgba(0, 0, 0, 0.8);
+	border-radius: 50px; 
+}
+
+.text {
+	font-size: 1em;
+	background-color:rgba(231,231,231,1.00);
+	margin-left: 5%;
+	margin-right: 5%;
+	border-radius: 5px;
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	
+}
+
+.back {
+	background-image: url("../crafts/Sadie2/Images/IMG_9582.jpg");
+	background-size: cover;
+	background-blend-mode: lighten;
+	border: 20px solid rgba(0, 0, 0, 0.8);
+}
+
+.back2 {
+	background-image: url("../crafts/Sadie2/Images/SageSprigs-997597.png");
+	background-size: cover;
+	background-blend-mode: lighten;
+	border: 20px solid rgba(0, 0, 0, 0.8);
+}
+
+
+@media only screen and (max-width: 760px) {
+	
+	.row {
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	.column {
+		flex-basis: 100%;
+	}
+	
+	
+}
+
