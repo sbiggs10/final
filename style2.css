@@ -122,14 +122,14 @@ img {
 }
 
 .back {
-	background-image: url("../crafts/Sadie2/Images/IMG_9582.jpg");
+	background-image: url("images/IMG_9582.jpg");
 	background-size: cover;
 	background-blend-mode: lighten;
 	border: 20px solid rgba(0, 0, 0, 0.8);
 }
 
 .back2 {
-	background-image: url("../crafts/Sadie2/Images/SageSprigs-997597.png");
+	background-image: url("images/IMG_9583.jpg");
 	background-size: cover;
 	background-blend-mode: lighten;
 	border: 20px solid rgba(0, 0, 0, 0.8);
