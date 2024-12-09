@@ -3,7 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <title>test1</title>
+	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap" rel="stylesheet">
+	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+	
 <link rel="stylesheet" href="style2.css">
+	
 </head>
 	
 
@@ -25,7 +39,7 @@
 	
   		<div class="comlumn2">
 	  
-	  			<h1>Gardening In South Texas</h1>
+	  			<h4>Gardening In South Texas</h4>
 	
 		</div>
 	</div>
@@ -83,10 +97,49 @@
 		</div>
 		
 		<div class="row">
+		
+			<div class="comlumn2">
+			
+				<link rel="stylesheet" href="jquery-ui.theme.css">
+  			<link rel="stylesheet" href="jquery-ui.structure.css">
+		<link rel="stylesheet" href="jquery-ui.css">
+  				<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  				<script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+  			<script>
+  $( function() {
+    $( "#tabs" ).tabs({
+      collapsible: true
+    });
+  } );
+  </script>
+ 
+<div id="tabs" style="margin-bottom: 60px;">
+  <ul>
+    <li><a href="#tabs-1">Annuals</a></li>
+    <li><a href="#tabs-2">Perennials</a></li>
+    <li><a href="#tabs-3">Texas weather</a></li>
+  </ul>
+  <div id="tabs-1">
+ 
+    <p>Annuals are plants that must be planted every year. They do not survive the winter in most cases. They are more likely to be able to survive the winter in warmer climates. It is best practice to plant annuals in the spring so that they can be enjoyed until the first frost.</p>
+  </div>
+  <div id="tabs-2">
+    <p>Perennials are plants that come back every year or stay year round. These types of plants are great for those who want to have low maintenance plants. Although these plants tend to come back every year, if it is extra cold durng the winter they may not survive. </p>
+  </div>
+  <div id="tabs-3">
+    <p>Texas weather is very unpredictable. It does tend to be very hot in the summer with quite a few days over 100 degrees Fahrenheit. Fall, winter, and spring are much more unpredictable. Some days it will feel like a warm summer day, while others will be frigid.</p>
+  </div>
+</div>
+			
+			</div>
+		
+		</div>
+		
+		<div class="row">
 			
   			<div class="comlumn2">
 	
-					<h2>Blog Posts</h2>
+					<h5>Blog Posts</h5>
 	
 			</div> 
 		
@@ -94,27 +147,22 @@
 		
 		<div class="row back3">
 	
-  			<div class="comlumn">
+  			<div class="comlumn back4">
 	
-				<h2>Post Title</h2>
-	
-			</div>
-	
-			<div class="comlumn">
-	
-				<h2>Post Title</h2>
+				<p><a href="post1.html">How to Start Gardening in South Texas: A Beginner's Guide</a></p>
 	
 			</div>
 	
-			<div class="comlumn">
 	
-				<h2>Post Title</h2>
+			<div class="comlumn back4">
+	
+				<p><a href="post2.html">How to Start a Vegetable Garden in Texas: A Beginner's Guide</a></p>
 	
 			</div>
 	
-			<div class="comlumn">
+			<div class="comlumn back4">
 	
-				<h2>Post Title</h2>
+				<p><a href="post3.html">Essential Tools for Starting a Garden in Texas: A Beginner's Guide</a></p>
 	
 			</div>
 			
@@ -125,13 +173,15 @@
 			<div class="comlumn2">
 	
 				<h1>Stay Up to Date</h1>
-				<p>Recieve updates on the latest <br>
+				<p>Receive updates on the latest <br>
 				tips and tricks to take care of <br>
 				your garden.</p>
 				
 				<div class="comlumn2">
 	
-				<h3>Join Mailing List</h3>
+					<h3><a href="mail.html">Join Mailing List</a></h3>
+					
+		
 	
 			</div>
 			
@@ -150,4 +200,39 @@
 		
 	
 </body>
+	
+	<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition, showError);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+
+function showError(error) {
+  switch(error.code) {
+    case error.PERMISSION_DENIED:
+      x.innerHTML = "User denied the request for Geolocation."
+      break;
+    case error.POSITION_UNAVAILABLE:
+      x.innerHTML = "Location information is unavailable."
+      break;
+    case error.TIMEOUT:
+      x.innerHTML = "The request to get user location timed out."
+      break;
+    case error.UNKNOWN_ERROR:
+      x.innerHTML = "An unknown error occurred."
+      break;
+  }
+}
+</script>
+	
 </html>

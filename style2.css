@@ -73,12 +73,14 @@ h1 {
 	text-align:center;
 	padding: 10px 10px 10px 10px;
 	font-size: 3em;
+	font-family: "Playfair Display", "sans-serif";
 }
 
 h2 {
 	text-align: center;
 	padding: 10px 10px 10px 10px;
 	font-size: 2em;
+	font-family: "Playfair Display", "sans-serif";
 }
 
 h3 {
@@ -90,12 +92,31 @@ h3 {
 	background-color: rgba(93,97,75,.7);
 	border: 1px solid rgba(0, 0, 0, 0.8);
 	border-radius: 30px;
+	font-family: "Playfair Display", "sans-serif";
 }
+
+h4 {
+	text-align:center;
+	padding: 10px 10px 10px 10px;
+	font-size: 7em;
+	font-family: "Euphoria Script", "sans-serif";
+
+}
+
+h5 {
+	text-align:center;
+	padding: 10px 10px 10px 10px;
+	font-size: 4em;
+	font-family: "Euphoria Script", "sans-serif";
+
+}
+
 
 p {
 	padding: 10px 10px 10px 10px;
 	font-size: 1.5em;
 	text-align: center;
+	font-family: "Montserrat", "sans-serif";
 	
 }
 
@@ -109,6 +130,12 @@ img {
 	width: 100%;
 	border: 4px solid rgba(0, 0, 0, 0.8);
 	border-radius: 50px; 
+}
+
+form {
+	align-items: center;
+	margin-left: 45%;
+	margin-right: 45%;
 }
 
 .text {
@@ -144,11 +171,64 @@ img {
 }
 
 .back3 {
-	background-color: rgba(233,232,226,1.00);
+	background-color:rgba(216,217,212,.9);
 	padding: 5% 5% 5% 5%;
 	border: 20px solid rgba(0, 0, 0, 0.8);
 	border-radius: 5px;
 }
+
+.back4 {
+	background-image: url("images/SageSprigs-997597.jpg");
+	background-size: cover;
+	background-blend-mode: lighten;
+	border: 4px solid rgba(0, 0, 0, 0.8);
+}
+
+.back5 {
+	background-image: url("images/SageSprigs-997597.jpg");
+	background-size: cover;
+	background-blend-mode:darken;
+	border: 15px solid rgba(0, 0, 0, 0.8);
+	padding-top: 4%;
+	padding-bottom: 3%;
+}
+	
+.me {
+	border: 15px solid rgba(0, 0, 0, 0.8);
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.button {
+	text-align: center;
+	padding: 10px 10px 10px 10px;
+	font-size: 1em;
+	margin-right: 20%;
+	margin-left: 20%;
+	background-color:rgba(130,131,129,1.00);
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	border-radius: 30px;
+}
+
+.blog {
+	text-align: left;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.mail {
+	background-image: url("images/SageSprigs-997597.jpg");
+	background-size: cover;
+	background-blend-mode: lighten;
+	border: 20px solid rgba(0, 0, 0, 0.8);
+	width: 50%;
+	justify-content: center;
+	padding-right: 8%;
+	border-radius: 5px;
+}
+
+
 
 @media only screen and (max-width: 760px) {
 	
